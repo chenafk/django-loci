@@ -168,7 +168,7 @@ class AbstractObjectLocationForm(forms.ModelForm):
         AbstractLocation.LOCATION_TYPES[0],
         AbstractLocation.LOCATION_TYPES[1],
     )
-    location_selection = forms.ChoiceField(choices=FORM_CHOICES, required=False)
+    location_selection = forms.ChoiceField(label=_('Location selection'), choices=FORM_CHOICES, required=False)
     name = forms.CharField(
         label=_('Location name'),
         max_length=75,
